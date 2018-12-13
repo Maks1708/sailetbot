@@ -10,7 +10,7 @@ import time
 
 bot = telebot.TeleBot(config.token)
 
-user_inf = []
+user_inf = [0, 0, 0]
 
 @bot.message_handler(commands = ['start'])
 def start(message):

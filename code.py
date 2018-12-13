@@ -39,7 +39,6 @@ def get_company(message):
 
 def get_phone(message):
     
-    bot.send_message(message.chat.id,"Какова цель вашего обращения")
     bot.register_next_step_handler(message, send_inf_to_admin)
     user_inf.append(message.text)
 
